@@ -1,6 +1,6 @@
 from django.contrib import admin
 
-from places.models import Place, Image
+from places.models import Image, Place
 
 
 @admin.register(Place)
