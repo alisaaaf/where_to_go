@@ -10,3 +10,9 @@ class Place(models.Model):
     def __str__(self):
         return self.title
 
+class Image(models.Model):
+    title = models.CharField(verbose_name='Название картинки', max_length=100)
+    image = models.ImageField(verbose_name='Картинка')
+
+    def __str__(self):
+        return self.title
