@@ -2,3 +2,6 @@
 .env
 .idea/
 *.sqlite3
+media/
+*.json
+
