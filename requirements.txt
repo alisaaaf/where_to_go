@@ -1,4 +1,7 @@
-django==5.2.1
+Django==5.2.1
+django-admin-sortable2==2.2.8
+django-tinymce==4.1.0
 environs==14.1.1
-pillow
 isort==6.0.1
+pillow
+

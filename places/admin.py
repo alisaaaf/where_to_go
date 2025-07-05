@@ -1,9 +1,11 @@
+from adminsortable2.admin import SortableAdminBase
 from django.contrib import admin
 from django.utils.safestring import mark_safe
 
 from places.models import Image, Place
 
-class ImageInline(admin.TabularInline):
+
+class ImageInline(SortableAdminBase, admin.TabularInline):
     model = Image
     extra = 1
 
@@ -23,3 +25,4 @@ class AdminPlace(admin.ModelAdmin):
 @admin.register(Image)
 class AdminImage(admin.ModelAdmin):
     raw_id_fields = ("place",)
+
