@@ -27,7 +27,7 @@ env.read_env()
 SECRET_KEY = env.str('SECRET_KEY', 'replace_me')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = env.bool('DEBUG', False)
+DEBUG = env.bool('DEBUG', )
 
 ALLOWED_HOSTS = env.list('ALLOWED_HOSTS',['127.0.0.1'])
 
@@ -136,3 +136,7 @@ STATICFILES_DIRS = [
 # https://docs.djangoproject.com/en/5.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+CSRF_COOKIE_SECURE = True
+SESSION_COOKIE_SECURE = True
+
