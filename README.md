@@ -1,58 +1,57 @@
-# Where to go
 
-**Where to go** — это сайт с подборкой интересных мест для путешествий.  
-Проект демонстрирует работу с Django, админкой, API и front-end визуализацией на основе верстки.
+# Where to Go
 
+**Where to Go** is a website showcasing interesting travel spots.  
+The project demonstrates working with Django, the admin interface, APIs, and front-end visualization based on layout templates.
 
-##  - Установка проекта локально
+## - Local Installation
 
-1. Клонируйте репозиторий:
+1. Clone the repository:
 
 ```bash
-git https://github.com/alisaaaf/where_to_go.git
+git clone https://github.com/alisaaaf/where_to_go.git
 cd where_to_go
 ```
 
-2. Установите зависимости:
+2. Install dependencies:
 
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Создайте файл `.env` и укажите в нем переменные:
+3. Create a `.env` file and add the following variables:
 
 ```bash
-SECRET_KEY=ваш_секретный_ключ
+SECRET_KEY=your_secret_key
 DEBUG=True
 ALLOWED_HOSTS=127.0.0.1,localhost
 ```
 
-4. Выполните миграции:
+4. Run migrations:
 
 ```bash
 python manage.py migrate
 ```
 
-5. Создайте администратора:
+5. Create an admin user:
 
 ```bash
 python manage.py createsuperuser
 ```
 
-6. Запустите сервер:
+6. Run the development server:
 
 ```bash
 python manage.py runserver
 ```
 
-## - Особенности проекта
+## - Project Features
 
-- Загрузка данных о местах через JSON-файлы
-- Django Admin с удобным управлением объектами
-- Интерактивная карта с отметками мест
+- Upload travel spots data via JSON files
+- Django Admin with convenient object management
+- Interactive map with location markers
 
-## - Деплой
+## - Deployment
 
-Проект загружен на бесплатном хостинге [PythonAnywhere](https://www.pythonanywhere.com/).
-
+The project is deployed for demo purposes on the free hosting service [PythonAnywhere](https://www.pythonanywhere.com/).
 
